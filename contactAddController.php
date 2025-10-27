@@ -9,7 +9,8 @@
     $method=$_SERVER['REQUEST_METHOD'];
     //* Process HTTP GET Request
     if($method=='GET'){
-        include "views/contactAdd-view.php";
+        $contactID = $_GET['contactID'];
+        include "views/contactUpdate-view.php";
     }
     
     //* Process HTTP POST Request
